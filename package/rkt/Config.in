@@ -1,0 +1,14 @@
+config BR2_PACKAGE_RKT
+	bool "rkt"
+    depends on BR2_PACKAGE_ACL
+    depends on BR2_PACKAGE_CPIO
+    depends on BR2_PACKAGE_GOLANG
+    depends on BR2_PACKAGE_SQUASHFS
+    depends on BR2_PACKAGE_SYSTEMD
+	help
+      rkt is an App Container runtime for Linux
+
+	  https://coreos.com/rkt/docs/latest/
+
+comment "rkt needs golang"
+	depends on BR2_PACKAGE_GOLANG
