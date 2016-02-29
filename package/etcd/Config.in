@@ -1,0 +1,9 @@
+config BR2_PACKAGE_ETCD
+	bool "etcd"
+	help
+      Distributed reliable key-value store for the most critical data of a distributed system
+
+	  https://coreos.com/etcd/docs/latest/
+
+comment "etcd needs golang"
+	depends on BR2_PACKAGE_GOLANG

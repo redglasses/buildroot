@@ -484,6 +484,7 @@ menu "Erlang libraries/modules"
 endmenu
 endif
 	source "package/gauche/Config.in"
+	source "package/golang/Config.in"
 	source "package/guile/Config.in"
 	source "package/haserl/Config.in"
 	source "package/jamvm/Config.in"
@@ -821,6 +822,7 @@ endmenu
 
 menu "Database"
 	source "package/berkeleydb/Config.in"
+    source "package/etcd/Config.in"
 	source "package/cppdb/Config.in"
 	source "package/gdbm/Config.in"
 	source "package/kompexsqlite/Config.in"
